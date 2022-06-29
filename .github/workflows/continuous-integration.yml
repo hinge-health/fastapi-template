@@ -67,7 +67,6 @@ jobs:
           ENVIRONMENT: test
           COVERAGE_FILE: .coverage.unit
         run: poetry run pytest -m unit
-        continue-on-error: true
       - name: Store coverage report
         if: always()
         uses: actions/upload-artifact@v3
